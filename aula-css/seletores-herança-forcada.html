@@ -1,0 +1,37 @@
+
+<!-- Herança forçada-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div > p {
+            color: #09f;
+        }
+
+        p > strong {
+            color: #f09;
+        }
+    </style>
+</head>
+<body>
+    <div><p>Parágrafo dentro de div</p></div>
+
+    <div><strong><p>Paragráfo dentro da div porem com negrito</p></strong></div>
+
+    <p>Paragráfo fora da div</p>
+
+    <strong>Negrito normal</strong>
+
+    <div><span>Texto <p>Paragrafo dentro da div e dentro do span</p></span></div>
+
+
+    <p><strong>Negrito dentro da tag </strong></p>
+
+    <p><em>italico</em> <strong>negrito dentro da tag p</strong></p>
+
+</body>
+</html>

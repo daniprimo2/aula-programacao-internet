@@ -19,7 +19,7 @@ Seletores
 -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,6 +30,7 @@ Seletores
     </style>
 </head>
 <body>
+    <h1>Seletores Universal</h1>
     <p>Paragrafo</p>
     <strong>Negrito</strong><br>
     <em>Itálico</em><br>
@@ -40,9 +41,82 @@ Seletores
     </p>
     Texto do body
     <strong>Negrito normal</strong>
+
+    <hr>
+    <hr>
 </body>
 </html>
 
+
+<!--
+   - Tipo: Ativar por tipo da tag
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        p {
+            color: blue;
+        }
+        strong {
+            color: red;
+            font-family: verdana;
+        }
+        em {
+            color: red;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seletores Por tipo</h1>
+
+    <p>Parágrafo azul</p>
+    <strong>Negrito vermelho</strong><br>
+    <em>Itálico Vermelho</em><br>
+    Texto do body, fonte sans serif.
+
+    <hr><hr><hr>
+</body>
+</html>
+
+
+
+<!--
+   - Seletor Agrupado para varios tipos: Ativar por tipo da tag
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        p, h1, h2 {
+            color: blue;
+            font-family: verdana;
+            text-align: center;
+        }
+        body {
+            color: green;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seletor Agrupado</h1>
+
+    <p>Paragrafo</p>
+    <h1>Texto H1</h1>
+    <h2>Texto H2</h2>
+
+</body>
+</html>
 
 <!--
     - Classe: Todos os css especifico designando
